@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+ <script>
+var myApp = angular.module("myApp", []);
+ myApp.controller("myController", function($scope) {
+ $scope.html= '';
+ var myObj = { "Name" : "Rimi", "Password" : "123123"};
+  $scope.foreachExample = function() {
+  angular.forEach(myObj, function(value, key) {
+  $scope.html += "key : "+key+", value: "+value+" | ";
+  });
+  }
+});
+</script>
+</head>
+<body>  
+<div ng-app="myApp">  
+<div ng-controller="myController">  
+    Result = {{html}}
+	<br>
+    <button ng-click ="foreachExample()">foreach Example</button>
+	<br>
+	
+</div> 
+</div>
+</body>  
+</html>

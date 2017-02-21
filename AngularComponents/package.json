@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "express": "^4.14.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^2.1.0",
+    "grunt-serve": "^0.1.6"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  },
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0"
+  }
+}
